@@ -1,0 +1,20 @@
+---
+- hosts: all
+  become: yes  # This means that all tasks will be executed with sudo
+  tasks:
+    - name: Install Python 3.7
+      apt:
+        name: python3.7
+        state: present
+        update_cache: yes
+
+    - name: Install pip3
+      apt:
+        name: python3-pip
+        state: present
+        update_cache: yes
+
+    - pip:
+        requirements: /opt/dev/DWP_Test/requirements.txt
+        executable: pip3
+        state: present

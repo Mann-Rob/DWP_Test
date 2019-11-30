@@ -1,0 +1,1 @@
+{"virtualbox":{"/opt/dev":{"guestpath":"/opt/dev","hostpath":"D:/Projects/Python Projects","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"D:/Projects/Python Projects/DWP_Test","disabled":false,"__vagrantfile":true}}}
